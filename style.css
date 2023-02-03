@@ -1,0 +1,281 @@
+@font-face {
+  font-family: "bold";
+  src: url(https://res.cloudinary.com/muhammederdem/raw/upload/v1536168548/unisans-font/UniSansHeavyCAPS.ttf);
+}
+
+@font-face {
+  font-family: "light";
+  src: url(https://res.cloudinary.com/muhammederdem/raw/upload/v1536168545/unisans-font/UniSansThinCAPS.woff2);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(./images/bg-main.jpg);
+}
+
+.f-bold {
+  font-family: "bold";
+}
+
+.f-light {
+  font-family: "light";
+}
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.p-con {
+  width: 950px;
+  height: 600px;
+  position: relative;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.btn {
+  cursor: pointer;
+  padding: 15px;
+  color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  border: none;
+}
+
+.prevBtn {
+  left: -10px;
+}
+
+.nextBtn {
+  right: -45px;
+}
+
+.back-card {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: 50%;
+  background-color: #cc1c40;
+  border-radius: 25px;
+  justify-content: center;
+  padding: 20px;
+}
+
+.back-card img {
+  position: absolute;
+  left: -100px;
+  transform: rotate(-90deg);
+  width: 540px;
+  opacity: 0.2;
+}
+
+.main-card {
+  padding: 35px 0;
+  align-items: center;
+  display: flex;
+  position: absolute;
+  width: 85%;
+  height: 80%;
+  right: -20px;
+  border-radius: 25px;
+  justify-content: space-evenly;
+  background-size: cover;
+  background-image: url(./images/bg-card.webp);
+}
+
+.main-card .img-con {
+  height: 100%;
+  width: 20%;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.main-card .img-con img {
+  height: 100%;
+  position: absolute;
+  left: -360px;
+  opacity: 0;
+  transition: all 0.5s;
+}
+
+.text-content {
+  color: #fff;
+  height: 100%;
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.product-header {
+  width: 100%;
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.product-header h1 {
+  font-size: 40px;
+}
+
+.product-header p {
+  font-size: 40px;
+}
+
+.product-info {
+  width: 100%;
+  height: 40%;
+  align-items: center;
+  display: flex;
+}
+
+.product-info .f {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 50%;
+  height: 40%;
+  letter-spacing: 3px;
+}
+
+.options-text {
+  font-size: 20px;
+}
+
+.product-info .f .options {
+  position: relative;
+  margin-top: 18px;
+  display: flex;
+  width: 100%;
+}
+
+.product-info .f .options .underline {
+  position: absolute;
+  width: 22px;
+  height: 3px;
+  bottom: -10px;
+  background-color: #cc1c40;
+  transition: all 0.3s;
+}
+
+.product-info .f .options .opt-con p {
+  z-index: 10;
+  padding: 5px;
+  font-weight: 700;
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+.opt-con {
+  height: 100%;
+  width: 100%;
+  display: flex;
+}
+
+.product-info .seprator {
+  height: 100%;
+  width: 1px;
+  background-color: #fff;
+}
+
+.product-info .s {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.product-info .s .circle-svg {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border-right: 4px solid #cc1c40;
+  border-bottom: 4px solid #cc1c40;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ds {
+  height: 200px;
+  width: 300px;
+  background-color: #fff;
+}
+
+.product-info .s .circle-svg .h {
+  position: absolute;
+  height: 0;
+  width: 100%;
+  background-color: red;
+  border-radius: 50%;
+  transition: all 0.3s;
+}
+
+.product-info .s h3 {
+  letter-spacing: 2px;
+}
+
+.btn-con {
+  width: 100%;
+  height: 75px;
+  display: flex;
+  align-items: center;
+}
+
+.btn-cart {
+  box-shadow: 1px 1px 20px 1px #cc1c40;
+  color: #fff;
+  margin-right: 50px;
+  outline: none;
+  width: 178px;
+  height: 50px;
+  background-color: #cc1c40;
+  border-radius: 20px;
+  font-size: 17px;
+  letter-spacing: 2px;
+  font-weight: bolder;
+  cursor: pointer;
+  border: none;
+}
+
+.btn-wishlist {
+  color: #fff;
+  cursor: pointer;
+  outline: none;
+  display: flex;
+  border: none;
+  background-color: transparent;
+  font-size: 20px;
+  gap: 10px;
+  align-items: center;
+}
+
+.btn-wishlist svg {
+  height: 30px;
+}
+
+.red {
+  transition: all 0.2s;
+  color: #cc1c40;
+}
